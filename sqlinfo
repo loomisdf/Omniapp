@@ -1,0 +1,5 @@
+Some important sql commands:
+
+sudo service mysql status
+sudo service mysql stop
+sudo service mysql start
