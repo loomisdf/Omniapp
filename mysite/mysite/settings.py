@@ -61,6 +61,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'mysql.connector.django',
         'NAME': 'omniappDB',
+        'USER': 'root',
         'PASSWORD': 'sleds',
         'OPTIONS': {
             'autocommit': True,
