@@ -3,3 +3,13 @@ Some important sql commands:
 sudo service mysql status
 sudo service mysql stop
 sudo service mysql start
+
+open the mysql command prompt:
+
+mysql -u root -p
+Then enter the password
+
+useful sql commands:
+
+create database (name of database);
+show databases;
