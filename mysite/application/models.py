@@ -8,7 +8,7 @@ from django import forms
 
 class Application(models.Model):
     title = models.CharField(max_length=200)
-    description = models.CharField(max_length=1000)
+    description = models.TextField(max_length=1000)
     link = models.CharField(max_length=1000)
     
     def __str__(self):
@@ -21,7 +21,7 @@ class Comment(models.Model):
     application = models.ForeignKey(Application)
     rating = models.IntegerField(default=0)
     title = models.CharField(max_length=200)
-    description = forms.CharField(widget=forms.Textarea)
+    description = models.TextField(max_length=1000)
 
     def __str__(self):
         return self.title
