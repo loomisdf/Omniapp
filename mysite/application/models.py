@@ -1,4 +1,5 @@
 from django.db import models
+from django import forms
 #from django.core.files.storage import FileSystemStorage
 
 #fs = FileSystemStorage(location='/media/photos')
