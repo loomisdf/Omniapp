@@ -6,17 +6,18 @@ from django import forms
 
 # Create your models here.
 
+#add up the ratings and find the average
+def CalculateRating():
+    return 0;
+
 class Application(models.Model):
     title = models.CharField(max_length=200)
     description = models.TextField(max_length=1000)
     link = models.CharField(max_length=1000)
-    
+    rating = CalculateRating()
     def __str__(self):
         return self.title
-#    logo = models.ImageField(storage=fs)
-
-
-
+    
 class Comment(models.Model):
     application = models.ForeignKey(Application)
     rating = models.IntegerField(default=0)
