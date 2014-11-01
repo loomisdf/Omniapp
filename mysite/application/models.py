@@ -8,7 +8,7 @@ from django import forms
 
 class Application(models.Model):
     title = models.CharField(max_length=200)
-    description = forms.CharField(widget=forms.Textarea)
+    description = models.CharField(max_length=1000)
     link = models.CharField(max_length=1000)
 #    logo = models.ImageField(storage=fs)
 
