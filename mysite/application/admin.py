@@ -8,6 +8,8 @@ class CommentInline(admin.TabularInline):
 class ApplicationAdmin(admin.ModelAdmin):
     fields = ['title', 'description', 'link']
     inlines = [CommentInline]
+    list_display = ('title','rating')
+    search_fields = ['title']
 
 # Register your models here.
 admin.site.register(Application, ApplicationAdmin)
