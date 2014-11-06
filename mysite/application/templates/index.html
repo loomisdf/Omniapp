@@ -1,3 +1,6 @@
+{% extends "base.html" %}o
+
+{% block content %}
 <h3>Current apps in Database:</h3>
 {% if app_list %}
   <ul>
@@ -8,3 +11,4 @@
 {% else %}
   <p>No apps are available.</p>
 {% endif %}
+{% endblock %}
