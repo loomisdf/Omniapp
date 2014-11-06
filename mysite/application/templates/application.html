@@ -3,4 +3,17 @@
 {% block content %}
 <h1>{{ app.title }}</h1>
 <p>{{app.description}}</p>
+
+<h3>Comments</h3>
+<div>
+  {% if comment_list %}
+  <ul>
+    {% for comment in comment_list %}
+    <li>Title: {{ comment.title }}</li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p>No comments have been created for this app yet</p>
+  {% endif %}
+</div>
 {% endblock %}
