@@ -10,4 +10,7 @@ def index(request):
     return render(request, 'index.html',context)
 
 def app_detail(request, app_id):
-    return HttpResponse("You're looking at %s." % app_id)
+    print(app_id)
+    app = Application.objects.get(pk=app_id)
+    context = {'app': app}
+    return render(request,'application.html', context)
