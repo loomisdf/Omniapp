@@ -1,5 +1,5 @@
 from django.contrib import admin
-from application.models import Application, Comment
+from application.models import Application, Comment, User
 
 class CommentInline(admin.TabularInline):
     model = Comment
@@ -13,3 +13,4 @@ class ApplicationAdmin(admin.ModelAdmin):
 
 # Register your models here.
 admin.site.register(Application, ApplicationAdmin)
+admin.site.register(User)
