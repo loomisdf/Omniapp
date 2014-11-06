@@ -16,7 +16,10 @@ TEMPLATE_LOADERS = ('django.template.loaders.filesystem.Loader',
                     'django.template.loaders.app_directories.Loader')
 
 TEMPLATE_DIRS = ([os.path.join(BASE_DIR, 'templates/admin')],
-                 BASE_DIR + 'application/templates',)
+                 [os.path.join(BASE_DIR, 'templates')],
+                 BASE_DIR + 'application/templates',
+                 BASE_DIR + 'templates',
+)
 
 SETTINGS_PATH = os.path.dirname(os.path.dirname(__file__))
 
