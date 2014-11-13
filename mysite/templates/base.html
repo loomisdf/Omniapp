@@ -7,7 +7,9 @@
 <html>
   <head>
     <title>Base HTML layout for all pages</title>
+    <script type="text/javascript" src="{% static 'js/hello.js' %}"></script>
 
+    <script src="{% static 'js/vendor/modernizr.js' %}"></script>
   </head>
   <body>
     <h1>Welcome to Omniapp! This will be a Navbar eventually.</h1>
@@ -16,6 +18,14 @@
     <a href="{{ signup }}">Signup</a>
     {% block content %}{% endblock%}
 
+<<<<<<< HEAD
    
+=======
+    <script src="{% static 'js/vendor/jquery.js' %}"></script>
+    <script src="{% static 'js/foundation.min.js' %}"></script>
+    <script>
+      $(document).foundation();
+    </script>
+>>>>>>> parent of a4ae78f... Updated base file
   </body>
 </html>
