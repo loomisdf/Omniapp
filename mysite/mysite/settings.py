@@ -23,7 +23,7 @@ TEMPLATE_DIRS = ([os.path.join(BASE_DIR, 'templates/admin')],
                  'home/templates',
 )
 
-SETTINGS_PATH = os.path.dirname(os.path.dirname(__file__))
+SETTINGS_PATH = os.path.dirname(__file__)
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
@@ -95,4 +95,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS = (
+    'static',
+)
