@@ -30,7 +30,7 @@ class Comment(models.Model):
 
 class Supported_Platform(models.Model):
     application = models.ForeignKey(Application)
-    platform = models.CharField(max_length=200)
+    title = models.CharField(max_length=200)
 
     def __str__(self):
         return self.platform
