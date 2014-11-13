@@ -17,8 +17,9 @@ TEMPLATE_LOADERS = ('django.template.loaders.filesystem.Loader',
 
 TEMPLATE_DIRS = ([os.path.join(BASE_DIR, 'templates/admin')],
                  [os.path.join(BASE_DIR, 'templates')],
-                 'application/templates',
                  'templates',
+		 'application/templates',
+		 'user/templates',
 )
 
 SETTINGS_PATH = os.path.dirname(os.path.dirname(__file__))
@@ -47,6 +48,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'application',
+    'user',
 )
 
 MIDDLEWARE_CLASSES = (
