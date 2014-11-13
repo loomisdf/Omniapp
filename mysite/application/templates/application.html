@@ -2,7 +2,13 @@
 
 {% block content %}
 <h1>{{ app.title }}</h1>
-<p>{{app.description}}</p>
+<p><b>Description: </b>{{ app.description }}</p>
+<p>
+  <b>Price: </b>
+  {% if app.price == 0 %} Free
+  {% else %} {{ app.price }}
+  {% endif %}
+</p>
 
 <h3>Comments</h3>
 <div>
