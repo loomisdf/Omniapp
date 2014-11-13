@@ -12,10 +12,23 @@
     <script src="{% static 'js/vendor/modernizr.js' %}"></script>
   </head>
   <body>
-    <h1>Welcome to Omniapp! This will be a Navbar eventually.</h1>
-    <a href="{{ home }}">Home</a>
-    <a href="{{ application_index }}">Application Index</a>
-    <a href="{{ signup }}">Signup</a>
+    <nav class="top-bar" data-topbar role="navigation">
+
+      <ul class="title-area">
+	<li class="name">
+	  <h1><a href="{{ home }}">Omniapp</a></h1>
+	</li>
+	<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+      </ul>
+
+      <section class="top-bar-section">
+	<ul class="left">
+	  <li><a href="{{ application_index }}">Application Index</a></li>
+	  <li><a href="{{ signup }}">Signup</a></li>
+	</ul>
+      </section>
+
+    </nav>
     {% block content %}{% endblock%}
 
     <script src="{% static 'js/vendor/jquery.js' %}"></script>
