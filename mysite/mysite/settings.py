@@ -20,6 +20,7 @@ TEMPLATE_DIRS = ([os.path.join(BASE_DIR, 'templates/admin')],
                  'templates',
 		 'application/templates',
 		 'user/templates',
+                 'home/templates',
 )
 
 SETTINGS_PATH = os.path.dirname(os.path.dirname(__file__))
@@ -49,6 +50,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'application',
     'user',
+    'home',
 )
 
 MIDDLEWARE_CLASSES = (
