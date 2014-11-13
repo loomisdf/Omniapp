@@ -33,4 +33,4 @@ class Supported_Platform(models.Model):
     title = models.CharField(max_length=200)
 
     def __str__(self):
-        return self.platform
+        return self.title

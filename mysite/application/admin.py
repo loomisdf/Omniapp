@@ -3,7 +3,7 @@ from application.models import Application, Comment, Supported_Platform
 
 class PlatformInline(admin.TabularInline):
     model = Supported_Platform
-    fields = ['platform']
+    fields = ['title']
 
 class CommentInline(admin.TabularInline):
     model = Comment
