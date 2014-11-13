@@ -6,7 +6,7 @@ class CommentInline(admin.TabularInline):
     fields = ['title', 'rating', 'description']
     
 class ApplicationAdmin(admin.ModelAdmin):
-    fields = ['title', 'description', 'link']
+    fields = ['title', 'description', 'link', 'price']
     inlines = [CommentInline]
     list_display = ('title','rating')
     search_fields = ['title']
