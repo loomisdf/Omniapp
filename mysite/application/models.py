@@ -28,4 +28,9 @@ class Comment(models.Model):
     def __str__(self):
         return self.title
 
-                             
+class Supported_Platform(models.Model):
+    application = models.ForeignKey(Application)
+    platform = models.CharField(max_length=200)
+
+    def __str__(self):
+        return self.platform
