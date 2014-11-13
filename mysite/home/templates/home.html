@@ -1,9 +1,250 @@
 
 
-<head>
-<link rel="stylesheet" type="text/css" href="mystyle.css">
+<style>
 
-</head>
+body{
+
+background-color: 9966CC;
+}
+
+
+	#tfnewsearch{
+  	 position: absolute;
+    left: 35%;
+    top: 50%;
+    margin-top: -11px;
+    margin-left: -75px;
+    width: 150px;
+    height: 22px;
+
+	}
+	.tftextinput{
+		margin: 0;
+		padding: 5px 15px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		border:1px solid #0076a3; border-right:0px;
+		border-top-left-radius: 5px 5px;
+		border-bottom-left-radius: 5px 5px;
+        width: 450;
+	}
+	.tfbutton {
+	   position: absolute;
+    left: 230%;
+    top: 50%;
+    margin-top: -11px;
+    margin-left: 100px;
+    width: 85px;
+    height: 30px;
+
+		padding: 5px 15px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		outline: none;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		color: 990000;
+		border: solid 1px #0076a3; border-right:0px;
+		background: 990000;
+		background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+		background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+		border-top-right-radius: 5px 5px;
+		border-bottom-right-radius: 5px 5px;
+	}
+	.tfbutton:hover {
+		text-decoration: none;
+		background: 990000;
+		background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
+		background: -moz-linear-gradient(top,  #0095cc,  #00678e);
+	}
+	/* Fixes submit button height problem in Firefox */
+	.tfbutton::-moz-focus-inner {
+	  border: 0;
+
+	}
+	.tfclear{
+		clear:both;
+	}
+
+    @-moz-font-face{
+    font-family: Book Antiqua;
+
+    font-weight:400;
+}
+@-webkit-font-face{
+    font-family: Book Antiqua;
+
+    font-weight:400;
+}
+@-o-font-face{
+    font-family:  Book Antiqua;
+
+    font-weight:400;
+}
+@-ms-font-face{
+    font-family:  Book Antiqua;
+
+    font-weight:400;
+}
+@font-face{
+    font-family:  Book Antiqua;
+
+    font-weight:400;
+}
+html body{
+    font-family:  Book Antiqua;
+
+}
+#logo{
+    margin:140px auto;
+    width:600px;
+    height:200px;
+    text-align:center;
+    font-size:100px;
+    text-shadow:0px 3px 3px rgba(0,0,0,0.25);
+    filter: dropshadow(color=rgba(0,0,0,0.25), offx=0, offy=3);
+}
+.G{
+    color:#0047F1;
+}
+.G::-moz-selection{
+    background-color:#0047F1;
+    color:#DD172C;
+}
+.G::-webkit-selection{
+    background-color:#0047F1;
+    color:#DD172C;
+}
+.G::-o-selection{
+    background-color:#0047F1;
+    color:#DD172C;
+}
+.G::-ms-selection{
+    background-color:#0047F1;
+    color:#DD172C;
+}
+.G::selection{
+    background-color:#0047F1;
+    color:#DD172C;
+}
+.o1{
+    color:#DD172C;
+}
+.o1::-moz-selection{
+    background-color:#DD172C;
+    color:#F9A600;
+}
+.o1::-webkit-selection{
+    background-color:#DD172C;
+    color:#F9A600;
+}
+.o1::-o-selection{
+    background-color:#DD172C;
+    color:#F9A600;
+}
+.o1::-ms-selection{
+    background-color:#DD172C;
+    color:#F9A600;
+}
+.o1::selection{
+    background-color:#DD172C;
+    color:#F9A600;
+}
+.o2{
+    color:#F9A600;
+}
+.o2::-moz-selection{
+    background-color:#F9A600;
+    color:#0047F1;
+}
+.o2::-o-selection{
+    background-color:#F9A600;
+    color:#0047F1;
+}
+.o2::-ms-selection{
+    background-color:#F9A600;
+    color:#0047F1;
+}
+.o2::-webkit-selection{
+    background-color:#F9A600;
+    color:#0047F1;
+}
+.o2::selection{
+    background-color:#F9A600;
+    color:#0047F1;
+}
+.g{
+    color:#0047F1;
+}
+.g::-moz-selection{
+    background-color:#0047F1;
+    color:#00930E;
+}
+.g::-o-selection{
+    background-color:#0047F1;
+    color:#00930E;
+}
+.g::-ms-selection{
+    background-color:#0047F1;
+    color:#00930E;
+}
+.g::-webkit-selection{
+    background-color:#0047F1;
+    color:#00930E;
+}
+.g::selection{
+    background-color:#0047F1;
+    color:#00930E;
+}
+.l{
+    color:#00930E;
+}
+.l::-moz-selection{
+    background-color:#00930E;
+    color:#E61B31;
+}
+.l::-o-selection{
+    background-color:#00930E;
+    color:#E61B31;
+}
+.l::-webkit-selection{
+    background-color:#00930E;
+    color:#E61B31;
+}
+.l::-ms-selection{
+    background-color:#00930E;
+    color:#E61B31;
+}
+.l::selection{
+    background-color:#00930E;
+    color:#E61B31;
+}
+.e{
+    color:#E61B31;
+}
+.e::-moz-selection{
+    background-color:#E61B31;
+    color:#0047F1;
+}
+.e::-webkit-selection{
+    background-color:#E61B31;
+    color:#0047F1;
+}
+.e::-o-selection{
+    background-color:#E61B31;
+    color:#0047F1;
+}
+.e::-ms-selection{
+    background-color:#E61B31;
+    color:#0047F1;
+}
+.e::selection{
+    background-color:#E61B31;
+    color:#0047F1;
+}
+
+</style>
 <body>
 <div id="logo">
     <a class="G">O</a><a class="o1">m</a><a class="o2">n</a><a class="g">i</a><a class="l">A</a><a class="e">p</a><a class="o2">p</a>
