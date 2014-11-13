@@ -1,10 +1,17 @@
+{% url 'application:index' as application_index %}
+{% url 'home:index' as home %}
+{% url 'signup:signup' as signup %}
+
 <!DOCTYPE html>
 <html>
   <head>
     <title>Base HTML layout for all pages</title>
   </head>
   <body>
-    <h1>Welcome to Omniapp!</h1>
+    <h1>Welcome to Omniapp! This will be a Navbar eventually.</h1>
+    <a href="{{ home }}">Home</a>
+    <a href="{{ application_index }}">Application Index</a>
+    <a href="{{ signup }}">Signup</a>
     {% block content %}{% endblock%}
   </body>
 </html>
