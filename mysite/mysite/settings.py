@@ -51,6 +51,7 @@ INSTALLED_APPS = (
     'application',
     'user',
     'home',
+    'about_us',
 )
 
 MIDDLEWARE_CLASSES = (
