@@ -32,11 +32,11 @@ SETTINGS_PATH = os.path.dirname(__file__)
 SECRET_KEY = 't^4*6^%!0p50&jqq$rrts2w$9@#iwd(nw+!0sty@t-idy4!gw('
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.environ.get('DEBUG', 'true').lower() == 'true'
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['sleds-omniapp.herokuapp.com']
 
 
 # Application definition
