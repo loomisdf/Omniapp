@@ -1,3 +1,19 @@
 body {
-	background-color: purple;
+	height: 100%;
+}
+
+#side > .small-2 {
+	background-color: #8E035D;
+	color: purple;
+	border: 3px solid black;
+	border-left: none;
+	border-top: none;
+	border-bottom: none;
+	/*height: 955px;*/
+	/*height: 100%;*/
+	width: 225px;
+}
+
+.side-nav li a:not(.button) {
+	color: white;
 }
