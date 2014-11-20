@@ -1,31 +1,33 @@
 {% extends "base.html" %}
 {% load static %} 
+
 {% block content %}
+<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		$("#logo").hide().fadeIn(3000);
+		$(".tftextinput").hide().fadeIn(3000);
+		$(".tfbutton").hide().fadeIn(3000);
+	});
 
-
-   <head>
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){$("body").hide().fadeIn(3000);});
-
-</script>
-<link rel="stylesheet" href="{% static 'css/home.css' %}" />
-
+	</script>
+	<link rel="stylesheet" href="{% static 'css/home.css' %}" />
 </head>
+
 <body>
-<div id="logo">
-    <span class="G">O</span><span class="o1">m</span><span class="o2">n</span><span class="g">i</span><span class="l">A</span><span class="e">p</span><span class="o2">p</span>
-</div>
+	<div id="logo">
+	    <span class="G">O</span><span class="o1">m</span><span class="o2">n</span><span class="g">i</span><span class="l">A</span><span class="e">p</span><span class="o2">p</span>
+	</div>
 	<!-- HTML for SEARCH BAR -->
-	<div id="tfheader">
-		<form id="tfnewsearch" method="get" action="http://www.google.com">
-		        <input type="text" class="tftextinput" name="q" size="21" maxlength="120"><input type="submit" value="search" class="tfbutton">
-		</form>
-	<div class="tfclear"></div>
+	<div class="row">
+		<div id="tfheader">
+			<form id="tfnewsearch" method="get" action="http://www.google.com">
+		    	    <input type="text" class="tftextinput" name="q" size="21" maxlength="120"><input type="submit" value="search" class="tfbutton">
+			</form>
+		<div class="tfclear"></div>
 	</div>
 </body>
-
 {% endblock %}
 
 
