@@ -1,14 +1,23 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h3>Current apps in Database:</h3>
-{% if app_list %}
-  <ul>
-    {% for app in app_list %}
-        <li><a href="/application/{{app.id}}/">{{app.title}}</a></li>
-    {% endfor %}
-  </ul>
-{% else %}
-  <p>No apps are available.</p>
-{% endif %}
+<p></p>
+<div class="row">
+	<div class="panel">
+		<div class="row">
+			<div class="small-12 columns">
+			<h3>Current apps in Database:</h3>
+			{% if app_list %}
+			  <ul>
+			    {% for app in app_list %}
+			        <li><a href="/application/{{app.id}}/">{{app.title}}</a></li>
+			    {% endfor %}
+			  </ul>
+			{% else %}
+			  <p>No apps are available.</p>
+			{% endif %}
+			</div>
+		</div>
+	</div>
+</div>
 {% endblock %}
