@@ -7,11 +7,11 @@ background-color: 9966CC;
 
 	#tfnewsearch{
   	 position: absolute;
-    left: 35%;
+    left: 40%;
     top: 50%;
     margin-top: -11px;
     margin-left: -75px;
-    width: 150px;
+    width: 400px;
     height: 22px;
 
 	}
@@ -27,12 +27,12 @@ background-color: 9966CC;
 	}
 	.tfbutton {
 	   position: absolute;
-    left: 230%;
+    left: 85%;
     top: 50%;
     margin-top: -11px;
     margin-left: 100px;
     width: 85px;
-    height: 30px;
+    height: 37px;
 
 		padding: 5px 15px;
 		font-family: Arial, Helvetica, sans-serif;
