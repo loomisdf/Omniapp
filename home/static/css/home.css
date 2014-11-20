@@ -6,9 +6,9 @@ background-color: 9966CC;
 
 
 	#tfnewsearch{
-  	 position: absolute;
-    left: 42%;
-    top: 40%;
+  	position: relative;
+    left: 34%;
+    bottom: 125px;
     margin-top: -11px;
     margin-left: -75px;
     width: 400px;
@@ -26,9 +26,10 @@ background-color: 9966CC;
         width: 450;
 	}
 	.tfbutton {
-	   position: absolute;
+	position: relative;
     left: 85%;
-    top: 50%;
+    bottom: 46px;
+    top: 45%;
     margin-top: -11px;
     margin-left: 100px;
     width: 85px;
