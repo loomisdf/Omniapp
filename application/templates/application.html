@@ -1,41 +1,65 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>{{ app.title }}</h1>
-<p><b>Description: </b>{{ app.description }}</p>
-<p><b>Link:</b> <a href="{{app.link}}">{{ app.link }}</a></p>
-<p>
-  <b>Price: </b>
-  {% if app.price == 0 %} Free
-  {% else %} ${{ app.price }}
-  {% endif %}
-</p>
-
-<p>Supported Platforms</p>
-<div>
-  {% if supported_platforms_list %}
-  <ul>
-    {% for platform in supported_platforms_list %}
-    <li> {{ platform.title }} </li>
-    {% endfor %}
-  </ul>
-  {% else %}
-  <p>Supported Platforms have not been provided</p>
-  {% endif %}
+<p></p>
+<div class="row">
+  <div class="panel">
+    <div class="row">
+      <div class="small-12 columns">
+        <h1>{{ app.title }}</h1>
+        <p><b>Description: </b>{{ app.description }}</p>
+        <p><b>Link:</b> <a href="{{app.link}}">{{ app.link }}</a></p>
+        <p>
+          <b>Price: </b>
+          {% if app.price == 0 %} Free
+          {% else %} ${{ app.price }}
+          {% endif %}
+        </p>
+      </div>
+    </div>
+  </div>
 </div>
 
-<h3>Comments</h3>
-<div>
-  {% if comment_list %}
-  <ul>
-    {% for comment in comment_list %}
-    <li>Title: {{ comment.title }}</li>
-    {% endfor %}
-  </ul>
-  {% else %}
-  <p>No comments have been created for this app yet</p>
-  {% endif %}
+<div class="row">
+  <div class="panel">
+    <div class="row">
+      <div class="small-12 columns">
+        <p>Supported Platforms</p>
+        <div>
+          {% if supported_platforms_list %}
+          <ul>
+            {% for platform in supported_platforms_list %}
+            <li> {{ platform.title }} </li>
+            {% endfor %}
+          </ul>
+          {% else %}
+          <p>Supported Platforms have not been provided</p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
+<div class="row">
+  <div class="panel">
+    <div class="row">
+      <div class="small-12 columns">
+      <h3>Comments</h3>
+        <div>
+          {% if comment_list %}
+          <ul>
+            {% for comment in comment_list %}
+            <li>Title: {{ comment.title }}</li>
+            {% endfor %}
+          </ul>
+          {% else %}
+          <p>No comments have been created for this app yet</p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 {% endblock %}
