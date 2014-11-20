@@ -1,31 +1,70 @@
 {% extends "base.html" %}
 {% load static %} 
+
 {% block content %}
+<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		$("#logo").hide().fadeIn(3000);
+		$(".tftextinput").hide().fadeIn(3000);
+		$(".tfbutton").hide().fadeIn(3000);
+	});
 
-
-   <head>
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){$("body").hide().fadeIn(3000);});
-
-</script>
-<link rel="stylesheet" href="{% static 'css/home.css' %}" />
-
+	</script>
+	<link rel="stylesheet" href="{% static 'css/home.css' %}" />
 </head>
+
 <body>
-<div id="logo">
-    <span class="G">O</span><span class="o1">m</span><span class="o2">n</span><span class="g">i</span><span class="l">A</span><span class="e">p</span><span class="o2">p</span>
-</div>
+	<div id="logo">
+	    <span class="G"><mark class="mark1">O</mark></span><span class="o1"><mark class="mark2">m</mark></span><span class="o2"><mark class="mark3">n</mark></span><span class="g"><mark class="mark4">i</mark></span><span class="l"><mark class="mark5">A</mark></span><span class="e"><mark class="mark6">p</mark></span><span class="o2"><mark class="mark7">p</mark></span>
+	</div>
 	<!-- HTML for SEARCH BAR -->
-	<div id="tfheader">
-		<form id="tfnewsearch" method="get" action="http://www.google.com">
-		        <input type="text" class="tftextinput" name="q" size="21" maxlength="120"><input type="submit" value="search" class="tfbutton">
-		</form>
-	<div class="tfclear"></div>
+	<div class="row">
+		<div id="tfheader">
+			<form id="tfnewsearch" method="get" action="http://www.google.com">
+		    	    <input type="text" class="tftextinput" name="q" size="21" maxlength="120"><input type="submit" value="search" class="tfbutton">
+			</form>
+		<div class="tfclear"></div>
 	</div>
 </body>
-
+<style>
+	/*O*/
+	.mark1 {
+		background: #0047F1;
+		color: #00930E;
+	}
+	/*M*/
+	.mark2 {
+		background: #DD172C;
+		color: #F9A600;
+	}
+	/*N*/
+	.mark3 {
+		background: #F9A600;
+		color: #0047F1;
+	}
+	/*I*/
+	.mark4 {
+		background: #0047F1;
+		color: #00930E;
+	}
+	/*A*/
+	.mark5 {
+		background: #00930E;
+		color: #E61B31;
+	}
+	/*P*/
+	.mark6 {
+		background: #E61B31;
+		color: #F9A600;
+	}
+	/*P*/
+	.mark7 {
+		background: #F9A600;
+		color: #0047F1;
+	}
+</style>
 {% endblock %}
 
 

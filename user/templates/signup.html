@@ -2,6 +2,41 @@
 {% url 'user:login' as login %}
 
 {% block content %}
-<h2>Welcome to the Signup page</h2>
-<p>Already have an acount? Login <a href="login">here</a>.</p>
+<p></p>
+<div class="row">
+	<div class="panel">
+		<div class="row">
+			<div class="small-12 columns" style="left:250px">
+				<h2>Welcome to the Signup page</h2>
+				<p>Already have an acount? Login <a href="login">here</a>.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="small-12 columns">
+				<label>Pick a Username
+					<input type="text" />
+				</label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="small-12 columns">
+				<label>Pick a password
+					<input type="text" />
+				</label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="small-12 columns">
+				<label>Re-enter your password
+					<input type="text" />
+				</label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="small-12 columns">
+				<input type="submit" class="button" value="submit" />
+			</div>
+		</div>
+	</div>
+</div>
 {% endblock %}
