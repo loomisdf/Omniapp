@@ -11,32 +11,20 @@
 				<p>Already have an acount? Login <a href="login">here</a>.</p>
 			</div>
 		</div>
-		<div class="row">
-			<div class="small-12 columns">
-				<label>Pick a Username
-					<input type="text" />
-				</label>
-			</div>
-		</div>
-		<div class="row">
-			<div class="small-12 columns">
-				<label>Pick a password
-					<input type="text" />
-				</label>
-			</div>
-		</div>
-		<div class="row">
-			<div class="small-12 columns">
-				<label>Re-enter your password
-					<input type="text" />
-				</label>
-			</div>
-		</div>
-		<div class="row">
-			<div class="small-12 columns">
-				<input type="submit" class="button" value="submit" />
-			</div>
-		</div>
+
+		<form action="/signup/" method="post">
+		{% csrf_token %}
+		<label for="username">Username:</label>
+			{{ form.username }}
+		<label for="password">Password:</label>
+			{{ form.password }}
+		<label for="conform_password">Confirm password:</label>
+			<input type="text" />
+		<lebal for="email">Email:</lebal>
+			{{ form.email }}
+		<input type="submit" class="button" value="Submit" />
+		</form>
+
 	</div>
 </div>
 {% endblock %}
