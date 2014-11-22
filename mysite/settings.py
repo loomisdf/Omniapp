@@ -38,6 +38,7 @@ TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = ['sleds-omniapp.herokuapp.com']
 
+#CSRF_COOKIE_SECURE = False
 
 # Application definition
 
