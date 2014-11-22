@@ -1,9 +1,8 @@
 from django.forms import ModelForm
-from myapp.models import Article
+from user.models import User
 
 #form class 
-
-class UserForm():
+class UserForm(ModelForm):
 	class Meta:
 		model = User
 		fields = ['username', 'password', 'email']
