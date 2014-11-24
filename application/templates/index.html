@@ -5,17 +5,17 @@
 <p></p>
     <!-- Thumbnails -->
     {% if app_list %}
-        <div class="large-8 columns">
-          <div class="row">
-          {% for app in app_list %}
-            <div class="large-4 small-6 columns">
-              <img src="{{ app.photo.url }}" />             
-              <div class="panel">
-                <h5><a href="/application/{{app.id}}/">{{app.title}}</a></h5>
-                <h6 class="subheader">${{app.price}}</h6>
-              </div>
-            </div>
-{% endfor %}
+    <div class="large-8 columns">
+      <div class="row">
+      {% for app in app_list %}
+        <div class="large-4 small-6 columns">
+          <a href="/application/{{app.id}}/"><img src="{{ app.photo.url }}" /></a>             
+          <div class="panel">
+            <h5><a href="/application/{{app.id}}/">{{app.title}}</a></h5>
+            <h6 class="subheader">${{app.price}}</h6>
+          </div>
+        </div>
+      {% endfor %}
 	  </div>
 	</div>
 	
