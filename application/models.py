@@ -16,6 +16,7 @@ class Application(models.Model):
     link = models.CharField(max_length=1000)
     rating = CalculateRating()
     price = models.DecimalField(max_digits=10, decimal_places=2, default=0.00)
+    photo = models.ImageField(upload_to="img")
     def __str__(self):
         return self.title
     

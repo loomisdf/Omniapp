@@ -1,23 +1,30 @@
 {% extends "base.html" %}
+{{MEDIA_URL}}
 
 {% block content %}
 <p></p>
-<div class="row">
-	<div class="panel">
-		<div class="row">
-			<div class="small-12 columns">
-			<h3>Current apps in Database:</h3>
-			{% if app_list %}
-			  <ul>
-			    {% for app in app_list %}
-			        <li><a href="/application/{{app.id}}/">{{app.title}}</a></li>
-			    {% endfor %}
-			  </ul>
-			{% else %}
-			  <p>No apps are available.</p>
-			{% endif %}
-			</div>
-		</div>
+    <!-- Thumbnails -->
+    {% if app_list %}
+        <div class="large-8 columns">
+          <div class="row">
+          {% for app in app_list %}
+            <div class="large-4 small-6 columns">
+              <img src="{{ app.photo.url }}" />             
+              <div class="panel">
+                <h5><a href="/application/{{app.id}}/">{{app.title}}</a></h5>
+                <h6 class="subheader">${{app.price}}</h6>
+              </div>
+            </div>
+{% endfor %}
+	  </div>
 	</div>
-</div>
+	
+	{% else %}
+	  <p>No apps are available.</p>
+	{% endif %}
+           
+    <!-- End Thumbnails -->
+ 
+
 {% endblock %}
+
