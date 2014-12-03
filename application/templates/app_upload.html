@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+<p></p>
+<div class="row">
+	<div class="panel">
+		<div class="row">
+			<div class="small-12 columns" style="left:250px">
+				<h2>Welcome to the App Upload page</h2>
+			</div>
+		</div>
+
+		<form enctype="multipart/form-data" action="/application/app_upload/" method="post">
+		{% csrf_token %}
+		<label for="title">Title:</label>
+			{{ form.title }}
+		<label for="description">Description:</label>
+			{{ form.description }}
+		<label for="link">Link:</label>
+			{{ form.link }}
+		<label for="price">Price:</label>
+			{{ form.price }}
+		<label for="photo">Photo:</label>
+			{{ form.photo }}
+		<input type="submit" class="button" value="Submit" />
+		</form>
+
+	</div>
+</div>
+{% endblock %}
