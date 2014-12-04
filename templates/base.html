@@ -1,6 +1,7 @@
 {% url 'application:index' as application_index %}
 {% url 'home:index' as home %}
 {% url 'signup:signup' as signup %}
+<!-- {% url 'application:app_upload' as app_upload %} -->
 {% url 'about_us:about_us' as about_us %}
 {% load static %}
 
@@ -29,6 +30,9 @@
       	  <li><a href="{{ signup }}">Signup</a></li>
       	  <li><a href="{{ about_us }}">About Us</a></li>
       	</ul>
+        <ul class="right">
+          <li><a href="/application/app_upload">App Upload</a></li>
+        </ul>
       </section>
 
     </nav>
